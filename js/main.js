@@ -85,7 +85,7 @@ $(document).ready(function() {
         stopScroll = false;
     }
 
-    bithday = new Date('1992-04-29');
+    var bithday = new Date('1992-04-29');
     var today = new Date();
     var age = Math.floor((today-bithday) / (365.25 * 24 * 60 * 60 * 1000));
     $('#presentation .age').html(age);
