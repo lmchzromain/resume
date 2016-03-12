@@ -26,7 +26,7 @@ $(document).ready(function() {
 
     function showHome(){
         stopScroll = true;
-        setTimeout(function(){$("#homeLogo").removeClass('opacity0').addClass('opacity1');}, 150); 
+        setTimeout(function(){$("#homeLogo").removeClass('opacity0').addClass('opacity1');}, 150);
         $("#home").removeClass('home2').addClass('home1');
     }
 
@@ -34,7 +34,7 @@ $(document).ready(function() {
         $("#about .aboutUp .profileImage").removeClass('rotate0').addClass('rotate1');
         $("#home").removeClass('home1').addClass('home2');
         setTimeout(function(){$(".aboutUp").removeClass('opacity0').addClass('opacity1');}, 350);
-        
+
         $('.aboutUp .opacity0').each(function(i){
             var p = $(this);
             setTimeout(function(){
@@ -44,7 +44,7 @@ $(document).ready(function() {
     }
 
 //    function showAbout2(){
-//        $(".aboutDown").removeClass('opacity0').addClass('opacity1'); 
+//        $(".aboutDown").removeClass('opacity0').addClass('opacity1');
 //    }
 
     function showServices(){
@@ -70,7 +70,7 @@ $(document).ready(function() {
                 h4.removeClass('opacity0').addClass('opacity1');
             }, i*120);
         });
-        
+
         $('.serviceLogo .icon').each(function(i){
             var icon = $(this);
             setTimeout(function(){
@@ -84,4 +84,12 @@ $(document).ready(function() {
     function blockScroll(){
         stopScroll = false;
     }
+
+    bithday = new Date('1992-04-29');
+    var today = new Date();
+    var age = Math.floor((today-bithday) / (365.25 * 24 * 60 * 60 * 1000));
+    $('#presentation .age').html(age);
+
+    var yearCopyright = new Date().getFullYear();
+    $('footer .dateCopyright').html(yearCopyright);
 });
