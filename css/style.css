@@ -1966,7 +1966,7 @@ hr {
   -ms-transition: all ease 1.2s;
   -transition: all ease 1.2s;
   transition: all ease 1.2s;
-  background: url("../img/profil.png") no-repeat;
+  background: url("../img/profil.jpg") no-repeat;
   filter: grayscale(100%);
   -webkit-filter: grayscale(90%);
   -moz-filter: grayscale(90%);
