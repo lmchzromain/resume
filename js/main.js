@@ -35,13 +35,13 @@ $(document).ready(function() {
   function showAbout(){
     $("#about .aboutUp .profileImage").removeClass('rotate0').addClass('rotate1');
     $("#home").removeClass('home1').addClass('home2');
-    setTimeout(function(){$(".aboutUp").removeClass('opacity0').addClass('opacity1');}, 350);
+    setTimeout(function(){$(".aboutUp").removeClass('opacity0').addClass('opacity1');}, 250);
 
     $('.aboutUp .opacity0').each(function(i){
       var p = $(this);
       setTimeout(function(){
         p.removeClass('opacity0').addClass('opacity1');
-      }, i*200);
+      }, i*120);
     });
   }
 
