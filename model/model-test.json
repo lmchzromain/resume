@@ -70,5 +70,12 @@
                 {"productName": "Baseball", "itemCost": 9.99},
                 {"productName": "Bat", "itemCost": 19.99}
             ]
+      },
+      {
+            "customerId": 11,
+            "orderItems": [
+                {"productName": "Baseball", "itemCost": 9.99},
+                {"productName": "Bat", "itemCost": 19.99}
+            ]
       }
 ]
